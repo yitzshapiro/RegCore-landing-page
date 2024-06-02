@@ -37,3 +37,8 @@ body {
 }
 
 
+.boxes-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
