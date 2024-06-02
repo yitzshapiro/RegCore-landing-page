@@ -8,9 +8,12 @@ html {
   padding: 0;
   background-color: black; /* Ensures the background is black */
   color: white; /* Sets the text color to white for visibility */
-  height: fit-content;
+  overflow-x: hidden;
+  width: 100%;
 }
-
+body {
+  overflow-y: hidden !important;
+}
 #root {
   margin: 0 auto;
   padding: 2rem;
@@ -20,4 +23,9 @@ html {
 
 .products {
   width: 100%
+}
+
+#boxes {
+  overflow: hidden;
+  overflow-y: hidden;
 }

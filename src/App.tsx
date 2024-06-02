@@ -12,28 +12,28 @@ function App() {
 
   return (
     <>
-    
-      <Vortex
-        backgroundColor="black"
-        className="flex items-center flex-col justify-center px-10 pt-10 mb-80 w-full dark z-40"
-        rangeY={900}
-        particleCount={50}
-        baseHue={1020}
-      >
-        <div className="flex justify-between w-full">
-        <div className='z-50 place-self-start'>
-          <img className="w-24 z-50"src="logo.png" alt="RegCore Logo"></img>
+    <div className="flex justify-between w-full px-10 pt-10">
+        <div className='place-self-start'>
+          <img className="w-24"src="logo.png" alt="RegCore Logo"></img>
         </div>
         <HoverBorderGradient
         containerClassName="rounded-full"
         as="button"
-        className="dark:bg-black bg-white text-black dark:text-white flex place-self-end space-x-2"
+        className="bg-black dark:text-white flex place-self-end space-x-2"
       >
         <span>Contact Us</span>
       </HoverBorderGradient>
       </div>
-        <div className="h-[10rem] flex-col justify-center items-center px-4 mt-80">
-          <div className="text-5xl mx-auto font-bold text-neutral-600 dark:text-neutral-400">
+      <Vortex
+        backgroundColor="black"
+        className="flex items-center justify-center flex-col w-full h-screen dark"
+        rangeY={900}
+        particleCount={50}
+        baseHue={1020}
+      >
+        
+        <div className="flex flex-col items-center justify-center px-4">
+          <div className="text-5xl font-bold text-neutral-600 dark:text-neutral-400">
             Regulatory Submissions, but <br />
             <FlipWords words={words} duration={2000} />
           </div>
@@ -51,7 +51,9 @@ function App() {
           Book a Demo
         </Button>
       </Vortex>
+      <div id="boxes">
       <Boxes className="opacity-60"/>
+      </div>
       <h1 className={cn('text-4xl font-bold text-white relative z-20 mb-20')}>
         Our Product
       </h1>
