@@ -26,7 +26,7 @@ function App() {
       </div>
       <Vortex
         backgroundColor="black"
-        className="flex items-center justify-center flex-col w-full h-screen dark"
+        className="flex items-center justify-center flex-col h-screen dark"
         rangeY={900}
         particleCount={50}
         baseHue={1020}
