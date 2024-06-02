@@ -26,7 +26,7 @@ function App() {
       </div>
       <Vortex
         backgroundColor="black"
-        className="flex items-center justify-center flex-col h-screen dark"
+        className="vortex-container flex items-center justify-center flex-col h-screen dark"
         rangeY={900}
         particleCount={50}
         baseHue={1020}
@@ -51,7 +51,7 @@ function App() {
           Book a Demo
         </Button>
       </Vortex>
-      <div id="boxes">
+      <div id="boxes" className="boxes-container">
       <Boxes className="opacity-60"/>
       </div>
       <h1 className={cn('text-4xl font-bold text-white relative z-20 mb-20')}>

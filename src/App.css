@@ -29,3 +29,11 @@ body {
   overflow: hidden;
   overflow-y: hidden;
 }
+
+.vortex-container {
+  position: relative;
+  z-index: 1; /* Lower index compared to boxes */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+
