@@ -52,7 +52,7 @@ function App() {
         </Button>
       </Vortex>
       <Boxes className="opacity-60"/>
-      <h1 className={cn('text-4xl font-bold text-white relative z-20 mb-20 bg-black')}>
+      <h1 className={cn('text-4xl font-bold text-white relative z-20 mb-20')}>
         Our Product
       </h1>
       <div id="products" className="flex space-x-8 > * + * w-full mb-40">
