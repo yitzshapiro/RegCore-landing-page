@@ -8,7 +8,7 @@ html {
   padding: 0;
   background-color: black; /* Ensures the background is black */
   color: white; /* Sets the text color to white for visibility */
-  height: 100%; /* Ensures the body takes at least the full height of the viewport */
+  height: fit-content;
 }
 
 #root {
@@ -16,4 +16,8 @@ html {
   padding: 2rem;
   text-align: center;
   background-color: black;
+}
+
+.products {
+  width: 100%
 }
