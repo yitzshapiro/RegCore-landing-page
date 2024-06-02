@@ -152,6 +152,7 @@ function App() {
         </div>
       </div>
       <br />
+      <p>© 2024 RegCore, Inc. All rights reserved.</p>
     </>
   );
 }
