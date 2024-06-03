@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
-  const rows = new Array(80).fill(1);
-  const cols = new Array(80).fill(1);
+  const rows = new Array(100).fill(1);
+  const cols = new Array(100).fill(1);
   let colors = [
     "--sky-300",
     "--pink-300",
@@ -24,10 +24,11 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
   return (
     <div
       style={{
-        transform: `translate(-40%,-60%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
+        transform: `translate(-50%, -50%) skewX(-48deg) skewY(14deg) scale(0.675) rotate(0deg) translateZ(0)`,
+        overflow: "hidden", // Add this line
       }}
       className={cn(
-        "absolute left-1/4 p-4 -top-1/4 flex  -translate-x-1/2 -translate-y-1/2 w-full h-full z-0 ",
+        "absolute left-1/2 top-1/2 p-4 flex w-[200%] h-[200%] z-0",
         className
       )}
       {...rest}
@@ -35,7 +36,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
       {rows.map((_, i) => (
         <motion.div
           key={`row` + i}
-          className="w-16 h-8  border-l  border-slate-700 relative"
+          className="w-16 h-8 border-l border-slate-700 relative"
         >
           {cols.map((_, j) => (
             <motion.div
@@ -47,7 +48,7 @@ export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
                 transition: { duration: 2 },
               }}
               key={`col` + j}
-              className="w-16 h-8  border-r border-t border-slate-700 relative"
+              className="w-16 h-8 border-r border-t border-slate-700 relative"
             >
               {j % 2 === 0 && i % 2 === 0 ? (
                 <svg

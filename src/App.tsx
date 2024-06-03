@@ -1,4 +1,5 @@
 import { FlipWords } from './components/ui/Flipwords';
+import React from 'react';
 import { Vortex } from './components/ui/vortex';
 import { Button } from './components/ui/moving-border';
 import { Meteors } from './components/ui/meteors';
@@ -21,7 +22,7 @@ function App() {
           as="button"
           className="bg-black dark:text-white flex place-self-end space-x-2"
         >
-          <span>Contact Us</span>
+          <a href="mailto:yitz@regcore.bio"><span>Contact Us</span></a>
         </HoverBorderGradient>
       </div>
       <Vortex
@@ -47,16 +48,16 @@ function App() {
           borderRadius="1.75rem"
           className="font-normal dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800"
         >
-          Book a Demo
+          <a href="mailto:yitz@regcore.bio">Book a Demo</a>
         </Button>
       </Vortex>
-      <div id="boxes" className="boxes-container">
+      <div id="boxes" className="boxes-container overflow-y-hidden">
         <Boxes className="opacity-60"/>
       </div>
       <h1 className={cn('text-4xl font-bold text-white relative z-20 mb-20 text-center')}>
         Our Product
       </h1>
-      <div id="products" className="flex flex-wrap justify-center gap-8 sm:space-y-0 sm:space-x-8 mb-40">
+      <div id="products" className="flex flex-wrap justify-center gap-8 mb-40">
         <div className="w-full sm:w-auto relative max-w-xs">
           <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.80] bg-red-500 rounded-full blur-3xl" />
           <div className="relative shadow-xl bg-zinc-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
