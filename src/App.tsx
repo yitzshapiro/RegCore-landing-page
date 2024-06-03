@@ -1,5 +1,4 @@
 import { FlipWords } from './components/ui/Flipwords';
-import React from 'react';
 import { Vortex } from './components/ui/vortex';
 import { Button } from './components/ui/moving-border';
 import { Meteors } from './components/ui/meteors';
